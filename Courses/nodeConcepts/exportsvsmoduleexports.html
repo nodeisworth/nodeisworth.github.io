@@ -1,3 +1,6 @@
+
+<div class='explainPart'>
+
 <h3>What is the difference between exports and module.exports ? </h3>
 
 
@@ -10,15 +13,28 @@ this line :
 
 donot ever write this cause this will generate error
 
-<div class='code'>exports={ sum:(x,y)=>x+y}</div>
+<div class='code'>
+   exports = {
+    sum: (x, y) => x + y
+}
+   </div>
 
 
 If you want to define a new object use <span class='highlight'> module.exports</span>
 
-<div class='code'>module.exports={ sum:(x,y)=>x+y}</div>
+<div class='code'>
+   module.exports={
+    sum:(x,y)=>x+y
+}
+   </div>
 
-
+   </div>
 <style>
+.explainPart
+   {
+      line-height: 60px;    
+      padding: 20px
+   }
 .highlight
 {
    color:crimson;
@@ -30,5 +46,6 @@ If you want to define a new object use <span class='highlight'> module.exports</
     background: black;
     color:white;
     font-weight: bold;
+       padding-left: 20px;
 }
 </style>
