@@ -1,24 +1,47 @@
+
+<div class='explainPart'>
+
 <h3>What is the difference between exports and module.exports ? </h3>
 
 
-<span class='highlight'> module.exports</span> is the main object exported or returned from the file while <span class='highlight'>exports</span>is a reference for <span class="highlight"> module.exports</span> so you can extend it by adding functions but not assigning
+<span class='highlight'> module.exports</span> is the main object exported or returned from the file while <span class='highlight'>exports</span> is a reference for <span class="highlight"> module.exports</span> so you can extend it by adding functions but not assigning
 it a new object I mean when using <span class='highlight'> exports</span> , you define a new function for example sum write
 this line :
 
-<div class='code'>exports.sum=(x,y)=>x+y</div>
+   <div class='code'>exports.sum=(x,y)=>x+y</div>
 
 
 donot ever write this cause this will generate error
 
-<div class='code'>exports={ sum:(x,y)=>x+y}</div>
+<div class='code error'>
+
+   exports = {
+    sum: (x, y) => x + y
+}
+</div>
 
 
 If you want to define a new object use <span class='highlight'> module.exports</span>
 
-<div class='code'>module.exports={ sum:(x,y)=>x+y}</div>
+<div class='code'>
+  
+   module.exports={
+    sum:(x,y)=>x+y
+}
+  
+   </div>
 
-
+   </div>
 <style>
+   .error
+   {
+      background:crimson;
+   }
+.explainPart
+   {
+      line-height: 60px;    
+      padding: 20px
+   }
 .highlight
 {
    color:crimson;
@@ -30,5 +53,7 @@ If you want to define a new object use <span class='highlight'> module.exports</
     background: black;
     color:white;
     font-weight: bold;
+       padding-left: 20px;
 }
+   
 </style>
