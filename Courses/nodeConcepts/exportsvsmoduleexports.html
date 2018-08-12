@@ -8,25 +8,28 @@
 it a new object I mean when using <span class='highlight'> exports</span> , you define a new function for example sum write
 this line :
 
-<code class='code'>exports.sum=(x,y)=>x+y</code>
+   <div class='code'><code>exports.sum=(x,y)=>x+y</code></div>
 
 
 donot ever write this cause this will generate error
 
-<code class='code error'>
+<div class='code error'>
+   <code>
    exports = {
     sum: (x, y) => x + y
 }
-   </code>
+   </code></div>
 
 
 If you want to define a new object use <span class='highlight'> module.exports</span>
 
-<code class='code'>
+<div class='code'>
+   <code>
    module.exports={
     sum:(x,y)=>x+y
 }
    </code>
+   </div>
 
    </div>
 <style>
