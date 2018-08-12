@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body ng-app="nodeisworth" ng-controller="nodecontroller">
+    <div class="container-fluid">
+        <div class="text-center">
+            <a href='https://nodeisworth.github.io/'><span class='logo'>NODEISWORTH</span></a>
+        </div>
+
+        <div class="text-center">
+                <input type='text'  ng-model="courseFilter" placeholder="Search for course or article" class='col-xs-12 col-md-6 col-lg-4 filtertxt'/>
+            </div>
+        <div class="row text-center courses">
+            <a ng-click="NavigateToCourse(course.id)"  ng-repeat="course in courses | filter : courseFilter" class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="courseSection columnwithpad">
+                    <div class="courseImg">
+                        <img ng-src="{{course.logo}}" />
+                    </div>
+                    <div class="overlay" ng-style="course.overlayStyle"></div>
+
+                    <div class="courseTitle">
+                        {{course.title}}
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src='js/config.js' type='text/javascript'></script>
+    <script>
+        var app = angular.module("nodeisworth", []);
+        app.controller("nodecontroller", function ($scope) {
+            $scope.courses = courses;
+
+            $scope.NavigateToCourse=function(courseId)
+            {
+                localStorage.courseId=courseId;
+                window.location.href='courseviewer.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

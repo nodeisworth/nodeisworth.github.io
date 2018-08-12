@@ -1,0 +1,149 @@
+.pagetitle
+{
+    font-family: georgia;
+    font-size: 2em;
+    padding: 3px;
+    background: rgba(2,204,186,.8);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+  
+    cursor: pointer;
+}
+.imgline
+{
+    text-align: center;
+}
+
+p img,h1 img
+{
+    text-align: center;
+}
+.expandIcon
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+p,h1
+{
+    line-height: 42px !important;
+    font-family: sans-serif !important;
+    
+}
+
+.courseContent
+{
+    text-align: left;
+    padding: 10px;
+    color: black;
+    font-size: 1.2em;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    margin-bottom: 21px;
+}
+
+.mainview
+{
+    margin-top:40px;
+}
+.detailsections
+{
+    margin-right:auto;
+    margin-left: auto;  
+    margin-top:5px;
+}
+
+.courseTitle
+{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+}
+a
+{
+    text-decoration: none !important;
+ }
+ .filtertxt
+ {
+    margin-top: 40px;
+    font-size: 23px;
+    border-radius: 10px;
+    background: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0px;
+    padding: 10px;
+    
+    text-align: center;
+ }
+.logo
+{
+
+  font-family: monospace;
+    font-size: 2.7em;
+    padding: 20px;
+    background:rgba(2,204,186,.8);
+    color:white;
+    font-weight: bold;
+margin-bottom:20px;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-bottom-left-radius:  20px;
+    border-bottom-right-radius:  20px;
+}
+.courses
+{
+margin-top:20px;
+}
+
+.courseSection
+{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-radius: .375rem;
+    transition: all .3s ease;
+    width:400px;
+}
+
+.columnwithpad
+{
+    padding:20px;
+    margin:20px;
+}
+.courseImg img
+{
+    text-align: center;
+    width: 90%;
+    height: 85%;;
+}
+.courseSection:hover
+{
+    box-shadow: 1px 1px 25px 0 rgba(46,61,73,.2);
+    
+}
+
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    opacity: .8;
+    top:0px;left:0px;
+}
+
+
+
+.courseImg
+{
+height:150px;
+        text-align: center;
+}
